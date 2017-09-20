@@ -11,7 +11,11 @@
     <ui-gmap-google-map center="map.center" zoom="map.zoom" draggable="true" options="options" bounds="map.bounds">
        <ui-gmap-markers models="listings" coords="'coordinates'" icon = "'icon'" idkey = "'_id'">
            <ui-gmap-windows show="show">
-               <div ng-non-bindable>{{name}}</div>
+               	<div ng-non-bindable>
+            Name: {{name}}<br>
+            Code: {{code}}<br>
+            Address: {{address}}
+          </div>
            </ui-gmap-windows>
        </ui-gmap-markers>
    </ui-gmap-google-map>
